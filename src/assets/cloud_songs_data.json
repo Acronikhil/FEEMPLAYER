@@ -1,0 +1,198 @@
+[
+    {
+      "name": "Top Songs",
+      "list":
+      [
+        {
+          "img": "./assets/imgs/gen.jpg",
+          "label": "Genda Phool",
+          "author": "Badshah",
+          "url": "./assets/audios/song1.mp3"
+        },
+        {
+          "img": "./assets/imgs/img2.png",
+          "label": "Warriyo Mortals",
+          "author": "NCS",
+          "url": "./assets/audios/song2.mp3"
+        },
+        {
+          "img": "./assets/imgs/chij.jpg",
+          "label": "Tu Cheez Badi Hai Mast Mast",
+          "author": "Vidya Vox Cover",
+          "url": "./assets/audios/song3.mp3"
+        },
+        {
+          "img": "./assets/imgs/img4.png",
+          "label": "Perfect",
+          "author": "Justin Bieber",
+          "url": "./assets/audios/song4.mp3"
+        },
+        {
+          "img": "./assets/imgs/let.jpg",
+          "label": "LET ME LOVE YOU",
+          "author": "Justin Bieber",
+          "url": "./assets/audios/song5.mp3"
+        }
+      ]
+    },
+    {
+      "name": "Sad Songs",
+      "list":
+      [
+        {
+          "img": "./assets/imgs/diltodke.jpg",
+          "label": "Dil Tod Ke",
+          "author": "B Praak",
+          "url": "./assets/audios/sad/song1.mp3"
+        },
+        {
+          "img": "./assets/imgs/phirbhi.jpg",
+          "label": "Mai Phir Bhi Tumko Chanhunga",
+          "author": "Arijit Singh",
+          "url": "./assets/audios/sad/song2.mp3"
+        },
+        {
+          "img": "./assets/imgs/humdard.jpg",
+          "label": "Humdard",
+          "author": "Arijit Singh",
+          "url": "./assets/audios/sad/song3.mp3"
+        },
+        {
+          "img": "./assets/imgs/losafar.jpg",
+          "label": "Lo Safar",
+          "author": "Jubin Nautiyal",
+          "url": "./assets/audios/sad/song4.mp3"
+        },
+        {
+          "img": "./assets/imgs/tumhiana.jpg",
+          "label": "Tum Hi Aana",
+          "author": "Jubin Nautiyal",
+          "url": "./assets/audios/sad/song5.mp3"
+        },
+        {
+          "img": "./assets/imgs/tu.jpg",
+          "label": "Tu Hai ki Nahi",
+          "author": "Ankit Tiwari",
+          "url": "./assets/audios/sad/song6.mp3"
+        },
+        {
+          "img": "./assets/imgs/tumhiho.jpg",
+          "label": "Tum Hi Ho",
+          "author": "Arijit Singh",
+          "url": "./assets/audios/sad/song7.mp3"
+        }
+      ]
+    },
+
+    {
+      "name": "Happy Songs",
+      "list":
+      [
+        {
+          "img": "./assets/imgs/dil.jpg",
+          "label": "Dil Dhadakne Do",
+          "author": "Shankar Mahadevan",
+          "url": "./assets/audios/happy/song1.mp3"
+        },
+        {
+          "img": "./assets/imgs/bat.jpg",
+          "label": "Batamez Dil",
+          "author": "Benny Dayal",
+          "url": "./assets/audios/happy/song2.mp3"
+        },
+        {
+          "img": "./assets/imgs/udedil.jpg",
+          "label": "Ude Dil Befikre",
+          "author": "Benny Dayal",
+          "url": "./assets/audios/happy/song3.mp3"
+        },
+        {
+          "img": "./assets/imgs/high.jpg",
+          "label": "High Heels Remix",
+          "author": "Jaz Dhami ,Yoyo Honey Singh",
+          "url": "./assets/audios/happy/song4.mp3"
+        },
+        {
+          "img": "./assets/imgs/kya.jpg",
+          "label": "Kya Baat Ay",
+          "author": "Hardy Sandhu",
+          "url": "./assets/audios/happy/song5.mp3"
+        },
+        {
+          "img": "./assets/imgs/horn.jpg",
+          "label": "Horn Blow",
+          "author": "Hardy Sandhu",
+          "url": "./assets/audios/happy/song6.mp3"
+        },
+        {
+          "img": "./assets/imgs/des.jpg",
+          "label": "Despacito",
+          "author": "Daddy Yankee",
+          "url": "./assets/audios/happy/song7.mp3"
+        },
+        {
+          "img": "./assets/imgs/mi.jpg",
+          "label": "Mi Gente",
+          "author": "J Balvin",
+          "url": "./assets/audios/happy/song8.mp3"
+        }
+      ]
+    },
+
+    {
+      "name": "Regular Songs",
+      "list":
+      [
+        {
+          "img": "./assets/imgs/chij.jpg",
+          "label": "Cheez Badi -Mast",
+          "author": "Udit Narayan",
+          "url": "./assets/audios/neutral/song1.mp3"
+        },
+        {
+          "img": "./assets/imgs/gen.jpg",
+          "label": "Genda-Phool",
+          "author": "Badshah",
+          "url": "./assets/audios/neutral/song2.mp3"
+        },
+        {
+          "img": "./assets/imgs/kya.jpg",
+          "label": "Kya Baat Ay",
+          "author": "Hardy Sandhu",
+          "url": "./assets/audios/happy/song5.mp3"
+        },
+        {
+          "img": "./assets/imgs/horn.jpg",
+          "label": "Horn Blow",
+          "author": "Hardy Sandhu",
+          "url": "./assets/audios/happy/song6.mp3"
+        },
+        {
+          "img": "./assets/imgs/des.jpg",
+          "label": "Despacito",
+          "author": "Daddy Yankee",
+          "url": "./assets/audios/happy/song7.mp3"
+        },
+        {
+          "img": "./assets/imgs/mi.jpg",
+          "label": "Mi Gente",
+          "author": "J Balvin",
+          "url": "./assets/audios/happy/song8.mp3"
+        },
+        {
+          "img": "./assets/imgs/img4.png",
+          "label": "Perfect",
+          "author": "Justin Bieber",
+          "url": "./assets/audios/song4.mp3"
+        },
+        {
+          "img": "./assets/imgs/let.jpg",
+          "label": "Let Me Love You",
+          "author": "Justin Bieber",
+          "url": "./assets/audios/neutral/let.mp3"
+        }
+        
+      ]
+    }
+
+]

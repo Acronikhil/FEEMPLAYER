@@ -1,0 +1,66 @@
+<div class="bar" >
+    <input class="ml-2 mt-2 w-100"  type="range"
+        min="0"
+        [max]="duration"
+        step="0.01"
+        #seek (input)="setSeek(seek.value)" 
+        [value]="currentTime"
+    >
+
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-3 col-3 py-3">
+                <div class="btn-group">
+                    <button class="btn btn-defaulf" (click)="previous()" [disabled]="isStart()">
+                        <i class="fa fa-backward" style="color: rgb(236, 219, 152);" aria-hidden="true"></i>
+                    </button>
+                    <button (click)="play()" *ngIf="!isPlay" title="Play" class="btn" style="background-color: red;border-radius: 25px;">
+                        <i class="fa fa-play" style="color: white;"></i>
+                    </button>
+                    <button (click)="pause()" *ngIf="isPlay" title="Pause" class="btn " style="color: rgb(251, 255, 0);">
+                        <i class="fa fa-pause"></i>
+                    </button>
+                    <button class="btn btn-defaulf" (click)="next()" [disabled]="isEnd()">
+                        <i class="fa fa-forward" style="color: rgb(236, 219, 152);" aria-hidden="true"></i>
+                    </button>
+                    <button class="btn btn-defaulf d-none d-md-block" (click)="stop()" [disabled]="!isPlay">
+                        <i class="fa fa-stop" style="color: rgb(236, 219, 152);" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6 col-9">
+               
+                <div class="details" style="margin-top: -1px;">
+                    <div class="img">
+                        <img src="{{mydata.img || './assets/imgs/audio.jpg'}}">
+                    </div>
+                    <div class="description">
+                        <div class="text-scroll">
+                            <ng-marquee speed="normal" duration="10s" direction="alternate" [stopOnHover]="true">
+                                {{mydata.label || 'No Song'}} | {{mydata.author || 'No Author'}}
+                            </ng-marquee>   
+                        </div> 
+                    </div>
+                    <div class="time">
+                        <div>{{readCurrentTime}}/{{readDuration}}</div>
+                    </div>
+                    <div class="clear"> <p w3-center style="margin-bottom: -10px;padding-top: 3px;margin-left: 25%;color: rgba(190, 252, 252, 0.356);">Player Designed By NIKHIL DUBEY</p></div>
+                </div>
+            </div>
+            <div class="col-md-3 py-2 d-none d-md-block">
+                <button class="w3-btn " style="margin-top: -5px;">
+                    <i class="fa fa-volume-up" style="color: rgb(255, 255, 255);font-size: 20px;" aria-hidden="true"></i>
+                </button>
+                <input class="ml-2 mt-3" type="range" style="background-color: rgb(45, 226, 0);"
+                min="0"
+                max="1"
+                step="0.01"
+                 #vol (input)="setVolume(vol.value)" [value]="valume">
+         
+                </div>
+        </div>
+    </div>
+    
+   
+</div>
+

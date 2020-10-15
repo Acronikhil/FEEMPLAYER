@@ -1,0 +1,198 @@
+<!--div class="w3-top">
+<div class="w3-bar w3-light-grey top-menu">
+        <div class="w3-bar-item logo">
+            <a routerLink="/">
+                <img src="" alt="MY LOGO"width="60" title="AudioFly App">
+            </a>  
+        </div>
+
+        <div class="d-block">
+            <form class="form">
+                <input class="w3-bar-item w3-input" type="text">
+                <input class="w3-bar-item w3-button w3-black" type="button" value="Search">
+            </form>
+        </div>
+
+        <div class="d-none d-sm-none d-md-block">
+                        <a routerLink="/signin" class="w3-bar-item w3-button w3-right">Signin</a>
+            <a routerLink="/signup" class="w3-bar-item w3-button w3-right">Signup</a>
+        </div>
+</div>
+</!--div-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(3, 3, 3);
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.topnav a.active:hover {
+  background-color: #ff4e00;
+background-image :linear-gradient(315deg, #ff4d00fd 0%, #ec9f05 74%);
+
+  
+}
+
+.topnav a:hover {
+  background-color: #ff4e00;
+background-image :linear-gradient(315deg, #ff4d00fd 0%, #ec9f05 74%);
+
+  
+}
+
+.topnav a.active {
+ /* background: -webkit-linear-gradient(45deg ,rgb(192, 7, 192)  , red);
+  */
+  color: black;
+  background-color: #fce043;
+background-image: linear-gradient(315deg, #fce043 0%, #fb7ba2 74%);
+
+}
+
+.topnav a.active:hover {
+  
+  
+}
+
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.topnav-right {
+  float: right;
+}
+
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 600px) {
+
+
+    .topnav {
+  position: fixed;
+  top: 0%;
+  height: fit-content;
+  width: 100%;
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+  .topnav a, .topnav-right {
+    float: none;
+    display: inline-block;
+  }
+  
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 30%;
+    transform: none;
+  }
+}
+</style>
+</head>
+<body>
+  
+<!-- Top navigation -->
+<div class="topnav">
+
+  <!-- Centered link -->
+  <div class="topnav-centered" >
+    <a href="#" class="w3-bar-item w3-button w3-display-topmiddle active" style="height: 9vh;margin-top: -15px;border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;">   <i class="fas fa-camera-retro fa-2x" style="color: black;"></i> <span class="logs bar">Webcam</span></a>
+    
+  </div>
+  
+  <!-- Left-aligned links (default) -->
+  <a href="#news" class="active2" style="color: rgb(29, 29, 29); font-size: 20px;">FemPlayer</a>
+  
+  <!-- Right-aligned links -->
+  <div class="topnav-right">
+    <a routerLink="/signup" class="w3-bar-item w3-button w3-right"> <i class="fa fa-user-plus fa-1.5x"></i> <span class="logs">SignUp</span></a>
+    <a routerLink="/signin" class="w3-bar-item w3-button w3-right ">  <i class="fas fa-sign-in-alt fa-1.5x"></i> <span class="logs">Login</span></a>
+    
+  </div>
+  
+</div>
+
+
+
+</body>
+</html>
+
+
+<!--div class="w3-bar w3-light-grey top-menu">
+    <div class="w3-bar-item w3-button logo ">FemPlayer</div>
+    <a href="#" class="w3-bar-item w3-button" style="margin-left: 5%;"><i class="fa fa-home fa-2x"></i> <span class="logs">Home</span></a>
+    
+       
+    <a routerLink="/signin" class="w3-bar-item w3-button w3-right"> <i class="fa fa-user-plus fa-2x"></i> <span class="logs">SignUp</span></a>
+    <a routerLink="/signup" class="w3-bar-item w3-button w3-right ">  <i class="fas fa-sign-in-alt fa-2x"></i> <span class="logs">Login</span></a>
+    <a href="#" class="w3-bar-item w3-button w3-display-topmiddle">   <i class="fas fa-camera-retro fa-2x" style="color: rgb(0, 0, 0);"></i> <span class="logs bar">Webcam</span></a>
+    
+
+
+</div-->
+
+<!--nav class="navbar navbar-expand-lg navbar-light bg-light top-menu">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav-->

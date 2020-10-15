@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Login/Signup</title>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Numans');
+
+    html,
+    body {
+      background-image: url('/images/s.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+      font-family: 'Numans', sans-serif;
+    }
+
+    .container {
+      height: 80%;
+      align-content: center;
+    }
+
+
+
+    .social_icon span {
+      font-size: 60px;
+      margin-left: 10px;
+      color: #FFC312;
+    }
+
+    .social_icon span:hover {
+      color: white;
+      cursor: pointer;
+    }
+
+    .card-header h3 {
+      color: white;
+    }
+
+    .social_icon {
+      position: absolute;
+      right: 20px;
+      top: -45px;
+    }
+
+    .input-group-prepend span {
+      width: 50px;
+      background-color: #FFC312;
+      color: black;
+      border: 0 !important;
+    }
+
+    input:focus {
+      outline: 0 0 0 0 !important;
+      box-shadow: 0 0 0 0 !important;
+
+    }
+
+    .remember {
+      color: white;
+    }
+
+    .remember input {
+      width: 20px;
+      height: 20px;
+      margin-left: 15px;
+      margin-right: 5px;
+
+    }
+
+    .login_btn {
+      color: black;
+      background-color: #FFC312;
+      width: 100px;
+    }
+
+    .login_btn:hover {
+      color: black;
+      background-color: white;
+    }
+
+    .links {
+      color: white;
+    }
+
+    .links a {
+      margin-left: 4px;
+    }
+
+    .wrapper {
+      height: fit-content;
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <div class="wrapper" style="height: 65vh;">
+    <a href="index.html"><button type="button" class="btn" style="margin: 0% 35%; margin-top: -10px;margin-bottom: 15px;color: black; box-shadow: -1px 1px 10px  rgb(253, 214, 38);border: 2px solid black ;background: -webkit-linear-gradient(-595rad , rgb(107, 0, 128 ), rgb(247, 0, 255) 40%,red 99%);
+      transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);font-weight: bolder;font-size: 20px;">HOME</button>
+    </a>
+    
+    <div class="form-container">
+      <div class="slide-controls">
+        <input type="radio" name="slide" id="login" checked>
+        <input type="radio" name="slide" id="signup">
+        <label for="login" class="slide login" style="font-family: numans; font-weight: 60;">Login Here</label>
+        <div class="slider-tab">
+        </div>
+      </div>
+      <div class="form-inner">
+        <form action="#" class="login">
+          <div class="input-group form-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-user"></i></span>
+            </div>
+            <input type="text" class="form-control" placeholder="username" required>
+
+          </div>
+
+          <div class="input-group form-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-key"></i></span>
+            </div>
+            <input type="password" class="form-control" placeholder="password" required>
+          </div>
+          <div class="row align-items-center remember">
+            <input type="checkbox">Remember Me
+          </div>
+          <div class="pass-link">
+            <a href="#"
+              style=" font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: larger;font-weight: 500;">Forgot
+              password?</a></div>
+          <div class="field btn">
+            <div class="btn-layer">
+            </div>
+            <button id="login"><a href="adminhome.html" style="text-decoration: none; color: white;">Login</a></button>
+          </div>
+
+
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const loginText = document.querySelector(".title-text .login");
+    const loginForm = document.querySelector("form.login");
+    const loginBtn = document.querySelector("label.login");
+    const signupBtn = document.querySelector("label.signup");
+    const signupLink = document.querySelector("form .signup-link a");
+    signupBtn.onclick = (() => {
+      loginForm.style.marginLeft = "-50%";
+      loginText.style.marginLeft = "-50%";
+    });
+    loginBtn.onclick = (() => {
+      loginForm.style.marginLeft = "0%";
+      loginText.style.marginLeft = "0%";
+    });
+    signupLink.onclick = (() => {
+      signupBtn.click();
+      return false;
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+<body style="background-color: #111; margin-top: 5px;color: white;text-align: center;">
+
+    <div  *ngFor="let mc of musicLists | async">
+    <h3 style="color: yellow;font-family: courier-new;letter-spacing: 3px;  margin-top: 5px; ">{{mc.name}}</h3>
+    <div class="horizontal-scroll">
+        <div *ngFor="let song of mc.list" class="w3-card-4">
+            <a (click)="sendData(song)" style="cursor: pointer;">
+                <img src="{{song.img || './assets/imgs/audio.jpg'}}" alt="Alps" style="width:100%" class="hov" >
+                <div class="w3-container w3-center">
+                    <p style="font-family: 'Architects Daughter', cursive;
+                    font-family: 'Ubuntu', sans-serif;; margin-top: 10px;">{{song.label || 'Unknown song'}}</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+</body>
+
+
+
+<!-- <h3>Recent Songs</h3>
+<div class="horizontal-scroll">
+    <div class="w3-card-4">
+        <img src="./assets/imgs/audio.jpg" alt="Alps" style="width:100%">
+    </div>
+    <div class="w3-card-4">
+        <img src="./assets/imgs/audio.jpg" alt="Alps" style="width:100%">
+    </div>
+</div> -->

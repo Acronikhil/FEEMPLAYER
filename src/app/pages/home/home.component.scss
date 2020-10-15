@@ -1,0 +1,62 @@
+.horizontal-scroll{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.horizontal-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.horizontal-scroll {
+    -ms-overflow-style: none;
+}
+
+.w3-card-4{
+    display: inline-block;
+    width: 300px;
+    width: 300px;
+    margin: 10px 2px;
+    border: .5px solid rgba(255, 0, 0, 0.192);
+}
+
+.w3-card-4:hover{
+    display: inline-block;
+    transition-property: ceil($number: 2);
+    transform-origin: top;;
+    transition-delay: 0s;
+    width: 320px;
+    width: 320px;
+    margin: 10px 0px;
+    border: 1px solid rgba(0, 255, 128, 0.445);
+    background-blend-mode: color ;
+    background-color: rgba(255, 255, 255, 0.342) ;
+    
+}
+
+.hov:hover
+{
+    background-blend-mode: color ;
+    background-color: rgba(255, 255, 255, 0.342) ;
+
+}
+
+.contain
+{
+    position: sticky;
+    top: 20%;
+    z-index: -500;
+   
+}
+
+@media screen and (max-width: 600px) {
+
+    .body
+    {
+    
+        position: relative;
+        
+        padding-top: 15%;
+    }
+}

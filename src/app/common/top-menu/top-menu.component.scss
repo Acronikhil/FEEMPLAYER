@@ -1,0 +1,232 @@
+.top-menu{
+    position: fixed;
+    top: 0;
+    height: 10vh;
+    width: 100%;
+    padding: 0px 0px;
+    text-decoration: none;
+    padding-top: 10px;
+    box-shadow: 0px 2px 2px rgb(105, 105, 109);
+
+    .logo{
+        color: red;
+        font-size: large;
+        padding: 5px 0px;
+    }
+
+    .differ{
+        padding-left: 50%;
+        content: ' ';
+    }
+
+    .form{
+        .w3-input{
+            margin-left: 15px;
+            width: 60%;
+        }
+        @media only screen and (max-width: 500px){
+            .w3-input{
+                margin-left: 25px;
+                width: 50%;
+            }
+        }
+    }
+}
+
+
+a
+{
+    text-decoration: none;
+}
+/*.top-menu
+{
+    position: fixed;
+    top: 0;
+    padding: 0px 0px;
+    text-decoration: none;
+    padding-top: 10px;
+    box-shadow: 0px 2px 2px rgb(105, 105, 109);
+    
+}
+.logo
+    {
+       margin-top: -20px;
+       display: flexbox;
+       float: left;
+       height: 12vh;
+       font-size: xx-large;
+       font-weight: 700;
+       padding-top:1.5%;
+      color: red;
+      background-color: rgb(76, 77, 70);
+      text-shadow: 0px 2px 1px rgb(2, 0, 0);
+      cursor: pointer;
+    }
+*/
+    .logo:hover
+    {
+       margin-top: -20px;
+       
+       float: left;
+       height: 12vh;
+       font-size: xx-large;
+       font-weight: 700;
+       padding-top:1.5%;
+       background-color: rgba(0, 0, 0, 0.74);
+      color: rgb(0, 0, 0);
+      text-shadow: 0px 2px 5px red;
+    }
+
+.web
+{
+    align-self: center;
+}
+
+.bar
+{
+  
+    border-bottom: solid rgb(2, 226, 2);
+    border-top: solid rgb(209, 0, 0);
+   
+    
+}
+
+.logs
+{
+    
+    font-size: 20px;
+    margin: 0px 10px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .topnav {
+    position: fixed;
+    top: 0;
+    height: 10vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 5px;
+  }
+  
+  .topnav a:hover {
+    /*background: -webkit-linear-gradient(45deg ,rgb(192, 7, 192)  , rgb(236, 36, 36));*/
+    background-color: blanchedalmond;
+    
+    font-size: large;
+   
+   
+}
+  
+  
+  .topnav-centered a {
+    box-shadow: 0px 2px 10px #b393d1;
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+  }
+  
+  .topnav-right {
+    float: right;
+  }
+  
+  /* Responsive navigation menu (for mobile devices) */
+  @media screen and (max-width: 600px) {
+    .topnav a, .topnav-right {
+      float: none;
+      display: inline-block;
+    }
+    
+    .topnav-centered a {
+        display: inline-block;
+        
+      position: relative;
+      top: 0;
+      left: 50%;
+      transform: none;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav a, .topnav-right {
+      float: none;
+      position: relative;
+      left: 15%;
+      top: -10%;
+      
+      display: inline-block;
+    }
+    
+    .topnav-centered a {
+      position: relative;
+      top: 0%;
+      
+      
+      
+}
+  }
+
+
+.active2
+{
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+ /* background: -webkit-linear-gradient(45rad ,rgb(192, 7, 192)  , rgb(214, 26, 82));
+  */
+  
+  background-color: #7ee8fa;
+  background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);  
+
+  font-family: "Nunito";
+  font-weight: 800;
+
+}
+
+
+
+
+.active2:hover
+{
+  transition-delay: 0.5s;
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+ /* background: -webkit-linear-gradient(45rad ,rgb(192, 7, 192)  , rgb(214, 26, 82));
+  */
+letter-spacing: 2px;
+  
+background-color: #9fa4c4;
+background-image: linear-gradient(315deg, #9fa4c4 0%, #9e768f 74%);
+
+  font-family: 'Trocchi', serif;
+  font-weight: 8000;
+
+}
+
+  
